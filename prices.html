@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДорЖБИ - Цены на услуги</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/1/1.png" alt="Логотип" class="logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html" class="active">О нас</a></li>
+                    <li class="dropdown">
+                        <a href="#">Услуги <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="improvement.html">Благоустройство</a></li>
+                            <li><a href="electrical.html">Электромонтажные работы</a></li>
+                            <li><a href="metal.html">Металлоконструкции</a></li>
+                            <li><a href="monolithic.html">Монолитные работы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="prices.html" class="active">Цены</a></li>
+                    <li><a href="guarantees.html">Гарантии</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: url('images/header/7.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="hero-content">
+        <h2>Цены на услуги</h2>
+        <p>Актуальные расценки на строительные работы</p>
+        </div>
+    </div>
+</section>
+
+    <section class="price-section">
+        <div class="container">
+            <div class="price-notice">
+                <div class="notice-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <p>Указанные цены являются ориентировочными. Точная стоимость рассчитывается индивидуально после изучения проекта, посещения объекта и составления сметной стоимости.</p>
+            </div>
+
+            <div class="price-tabs">
+                <button class="price-tab-btn active" data-tab="improvement">Благоустройство</button>
+                <button class="price-tab-btn" data-tab="electrical">Электромонтаж</button>
+                <button class="price-tab-btn" data-tab="metal">Металлоконструкции</button>
+                <button class="price-tab-btn" data-tab="monolithic">Монолитные работы</button>
+            </div>
+
+            <div class="price-tab-content active" id="improvement">
+                <h2 class="section-title">Цены на благоустройство</h2>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Вид работ</th>
+                                <th>Ед. изм.</th>
+                                <th>Цена (руб.)</th>
+                                <th>Примечание</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Асфальтирование дорог</td>
+                                <td>м²</td>
+                                <td>от 500</td>
+                                <td>Толщина 5 см</td>
+                            </tr>
+                            <tr>
+                                <td>Асфальтирование парковок</td>
+                                <td>м²</td>
+                                <td>от 550</td>
+                                <td>Толщина 5 см</td>
+                            </tr>
+                            <tr>
+                                <td>Ямочный ремонт</td>
+                                <td>м²</td>
+                                <td>от 600</td>
+                                <td>Включая материалы</td>
+                            </tr>
+                            <tr>
+                                <td>Набивное покрытие</td>
+                                <td>м²</td>
+                                <td>от 450</td>
+                                <td>Толщина 4 см</td>
+                            </tr>
+                            <tr>
+                                <td>Покрытие из резиновой крошки</td>
+                                <td>м²</td>
+                                <td>от 1200</td>
+                                <td>Толщина 10 мм</td>
+                            </tr>
+                            <tr>
+                                <td>Укладка тротуарной плитки</td>
+                                <td>м²</td>
+                                <td>от 800</td>
+                                <td>Стандартная плитка</td>
+                            </tr>
+                            <tr>
+                                <td>Укладка брусчатки</td>
+                                <td>м²</td>
+                                <td>от 1500</td>
+                                <td>Гранитная брусчатка</td>
+                            </tr>
+                            <tr>
+                                <td>Озеленение территории</td>
+                                <td>м²</td>
+                                <td>от 300</td>
+                                <td>Газон рулонный</td>
+                            </tr>
+                            <tr>
+                                <td>Установка бордюрного камня</td>
+                                <td>м.п.</td>
+                                <td>от 350</td>
+                                <td>Бордюр садовый</td>
+                            </tr>
+                            <tr>
+                                <td>Установка МАФ</td>
+                                <td>шт.</td>
+                                <td>от 5000</td>
+                                <td>Малые архитектурные формы</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="price-tab-content" id="electrical">
+                <h2 class="section-title">Цены на электромонтажные работы</h2>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Вид работ</th>
+                                <th>Ед. изм.</th>
+                                <th>Цена (руб.)</th>
+                                <th>Примечание</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Уличное освещение (столбы)</td>
+                                <td>точка</td>
+                                <td>от 2500</td>
+                                <td>Высота 3-4 метра</td>
+                            </tr>
+                            <tr>
+                                <td>Уличное освещение (консоли)</td>
+                                <td>точка</td>
+                                <td>от 3500</td>
+                                <td>Высота 6-8 метров</td>
+                            </tr>
+                            <tr>
+                                <td>Прокладка кабеля в земле</td>
+                                <td>м.п.</td>
+                                <td>от 150</td>
+                                <td>Глубина 0.7 м</td>
+                            </tr>
+                            <tr>
+                                <td>Монтаж распределительного щита</td>
+                                <td>шт.</td>
+                                <td>от 8000</td>
+                                <td>Щит на 12 модулей</td>
+                            </tr>
+                            <tr>
+                                <td>Электроснабжение участка</td>
+                                <td>кВт</td>
+                                <td>от 1500</td>
+                                <td>Подключение к сети</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="price-tab-content" id="metal">
+                <h2 class="section-title">Цены на металлоконструкции</h2>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Вид работ</th>
+                                <th>Ед. изм.</th>
+                                <th>Цена (руб.)</th>
+                                <th>Примечание</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ограждение из профнастила</td>
+                                <td>м.п.</td>
+                                <td>от 2000</td>
+                                <td>Высота 1.5 м</td>
+                            </tr>
+                            <tr>
+                                <td>Ограждение 3D</td>
+                                <td>м.п.</td>
+                                <td>от 3500</td>
+                                <td>Высота 1.8 м</td>
+                            </tr>
+                            <tr>
+                                <td>Кованое ограждение</td>
+                                <td>м.п.</td>
+                                <td>от 6000</td>
+                                <td>Индивидуальный дизайн</td>
+                            </tr>
+                            <tr>
+                                <td>Ангар каркасный</td>
+                                <td>м²</td>
+                                <td>от 8000</td>
+                                <td>Площадь от 100 м²</td>
+                            </tr>
+                            <tr>
+                                <td>Навес металлический</td>
+                                <td>м²</td>
+                                <td>от 5000</td>
+                                <td>Односкатный</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="price-tab-content" id="monolithic">
+                <h2 class="section-title">Цены на монолитные работы</h2>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Вид работ</th>
+                                <th>Ед. изм.</th>
+                                <th>Цена (руб.)</th>
+                                <th>Примечание</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Фундаментная плита</td>
+                                <td>м³</td>
+                                <td>от 4500</td>
+                                <td>Толщина 30 см</td>
+                            </tr>
+                            <tr>
+                                <td>Ленточный фундамент</td>
+                                <td>м³</td>
+                                <td>от 5000</td>
+                                <td>Ширина 40 см</td>
+                            </tr>
+                            <tr>
+                                <td>Промышленные полы (топинг)</td>
+                                <td>м²</td>
+                                <td>от 1200</td>
+                                <td>Толщина 20 см</td>
+                            </tr>
+                            <tr>
+                                <td>Промышленные полы (полимерное)</td>
+                                <td>м²</td>
+                                <td>от 1800</td>
+                                <td>Толщина покрытия 3 мм</td>
+                            </tr>
+                            <tr>
+                                <td>Бетонная стяжка</td>
+                                <td>м²</td>
+                                <td>от 800</td>
+                                <td>Толщина 5 см</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="price-calculator">
+                <h2 class="section-title">Онлайн-калькулятор</h2>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="service-type">Тип услуги:</label>
+                        <select id="service-type">
+                            <option value="">Выберите услугу</option>
+                            <option value="asphalt">Асфальтирование</option>
+                            <option value="paving">Укладка плитки</option>
+                            <option value="fence">Установка ограждения</option>
+                            <option value="foundation">Заливка фундамента</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Площадь/Длина:</label>
+                        <input type="number" id="area" placeholder="Введите площадь в м² или длину в м.п.">
+                    </div>
+                    <div class="form-group">
+                        <label for="material">Материал:</label>
+                        <select id="material">
+                            <option value="standard">Стандартный</option>
+                            <option value="premium">Премиум</option>
+                            <option value="economy">Эконом</option>
+                        </select>
+                    </div>
+                    <button id="calculate-btn" class="btn">Рассчитать стоимость</button>
+                    <div class="calculator-result">
+                        <h3>Примерная стоимость:</h3>
+                        <div class="result-value">0 руб.</div>
+                        <p>Для точного расчета оставьте заявку и наш менеджер свяжется с вами</p>
+                        <a href="contacts.html" class="btn btn-small">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-advantages">
+        <div class="container">
+            <h2 class="section-title">Почему клиенты выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-ruble-sign"></i>
+                    </div>
+                    <h3>Прозрачное ценообразование</h3>
+                    <p>Никаких скрытых платежей и накруток. Все цены фиксируются в договоре.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Гибкая система скидок</h3>
+                    <p>Скидки постоянным клиентам и на большие объемы работ.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Детальный расчет</h3>
+                    <p>Составляем подробную смету с учетом всех особенностей объекта.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Подберем оптимальное решение под ваш бюджет.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Нужен точный расчет стоимости?</h2>
+                <p>Оставьте заявку и наш специалист подготовит для вас индивидуальное коммерческое предложение</p>
+                <a href="contacts.html" class="btn">Получить расчет</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Дор<span>ЖБИ</span></h3>
+                    <p>Комплексные строительные решения с 2015 года</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services/improvement.html">Услуги</a></li>
+                        <li><a href="prices.html">Цены</a></li>
+                        <li><a href="guarantees.html">Гарантии</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (812) 601-05-11</li>
+                        <li><i class="fas fa-envelope"></i> 6010511@mail.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург, ул. Хрустальная, 11</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2015-2025 ДорЖБИ. Все права защищены.</p>
+                <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        
+        // Price tabs functionality
+        const priceTabBtns = document.querySelectorAll('.price-tab-btn');
+        const priceTabContents = document.querySelectorAll('.price-tab-content');
+        
+        if (priceTabBtns.length && priceTabContents.length) {
+            priceTabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    priceTabBtns.forEach(btn => btn.classList.remove('active'));
+                    priceTabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        }
+
+        // Price calculator
+        const calculateBtn = document.getElementById('calculate-btn');
+        if (calculateBtn) {
+            calculateBtn.addEventListener('click', function() {
+                const serviceType = document.getElementById('service-type').value;
+                const area = parseFloat(document.getElementById('area').value);
+                const material = document.getElementById('material').value;
+                
+                if (!serviceType || !area || isNaN(area)) {
+                    alert('Пожалуйста, заполните все поля');
+                    return;
+                }
+                
+                let pricePerUnit = 0;
+                
+                // Примерные цены для калькулятора
+                switch(serviceType) {
+                    case 'asphalt':
+                        pricePerUnit = material === 'premium' ? 700 : (material === 'economy' ? 450 : 550);
+                        break;
+                    case 'paving':
+                        pricePerUnit = material === 'premium' ? 1500 : (material === 'economy' ? 600 : 900);
+                        break;
+                    case 'fence':
+                        pricePerUnit = material === 'premium' ? 4500 : (material === 'economy' ? 1800 : 2500);
+                        break;
+                    case 'foundation':
+                        pricePerUnit = material === 'premium' ? 5500 : (material === 'economy' ? 3500 : 4500);
+                        break;
+                }
+                
+                const total = Math.round(area * pricePerUnit);
+                document.querySelector('.result-value').textContent = total.toLocaleString('ru-RU') + ' руб.';
+                document.querySelector('.calculator-result').style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
